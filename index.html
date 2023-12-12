@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Club Directory</title>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="style.css"/>
+            <link rel="SHORTCUT ICON" href="images/school_laces_icon8.png" type="image/x-icon"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="index.js"></script>
+    </head>
+    <body id="body" class="body" onclick="">
+            <header>
+                <img src="images/background3.1.png" alt="sample image" class="background-image">
+                <h3 class="title">Homestead Clubs</h3>
+                <p class="title-description">Explore club offerings at Homestead.
+                </p>
+            </header>
+            <!-- <nav class="nav-bar" id="top-nav">
+                <ul>
+                    <li><a href="index.html" class="link">OVERVIEW</a></li>
+                    <li><a href="events.html" class="link">EVENTS</a></li>
+                    <li><a href="resources.html" class="link">RESOURCES</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+                </ul>
+            </nav> -->
+
+            <div class="search">
+                <div class="flex column">
+                    <label class="searchbar-label" for="search">What are you looking for?</label>
+                    <input id="searchbar" onkeyup="search_clubs()" type="text" name="search" placeholder="Search clubs...">
+                </div>
+            </div>
+            <div class="half-space">
+
+
+            </div>
+
+            <div class="flex-event" id="APISA Asian Pacific Islander Association">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>APISA (Asian Pacific Islander Student Association)</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    APISA is a club where students can both connect with their
+                                    backgrounds and explore Asian and Pacific Islander cultures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="battle of the books">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Battle of the Books</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                   Battle of the Books is a group of students
+                                   interested in reading and literature. We participate in an annual
+                                   statewide trivia competition based on that year's titles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Best Buddies">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Best Buddies</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    Best Buddies aims to form meaningful relationships between those 
+                                    in mainstream and special educational classes through activities held
+                                    both inside and outside of school settings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Biology Club">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Biology Club</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                   The Biology Club offers students the chance to learn more about biology through
+                                   labs and other activities. The club also helps students prepare for the USA Biolympiad 
+                                   in February.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Chemistry Club">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Chemistry Club</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    Students in the Chemistry Club learn about different chemistry topics
+                                    and prepare for the U.S. National Chemistry Olympiad in March.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Chinese Club">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Chinese Club</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    In the Chinese Club, students explore Chinese culture
+                                    through different activities, including calligraphy and pen pals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="DECA">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>DECA</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    DECA gives students the opportunity to develop their 
+                                    business skills in areas like entrepreneurship and marketing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="GEMS Girls Exploring Math and Science">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>GEMS (Girls Exploring Math and Science)</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    GEMS offers girls the opportunity to learn more about
+                                    science and math through group activities and guest talks 
+                                    conducted by industry experts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Interact">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Interact</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    Interact members complete different service projects as part of the club, 
+                                    deepening their connections with others and strengthening the community
+                                    around them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Math Team">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Math Team</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    The Math Team develops their problem-solving skills
+                                    through different competitions and conferences, including the AMC 
+                                    and WML contests.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Memtal Health Club">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Mental Health Club</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    The Mental Health Club educates students about mental health and offers
+                                    a safe space for mental health discussion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Model UN">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Model UN</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    Model UN is for all students interested in international affairs. Each student
+                                    is assigned a country that they will represent in simulated UN conferences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Psychology Club">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Psychology Club</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    Students in the Psychology Club meet to discuss the differet areas of psychology and 
+                                    learn about the career opportunities that come with them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Relay For Life RFL">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Relay For Life</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    Relay for Life raises money for the American Cancer Society through events like the annual relay 
+                                    and the Coaches v. Cancer hockey game, generating resources to fund cancer research and create 
+                                    support systems for those who have been affected by the disease.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Spanish Club">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Spanish Club</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    The Spanish Club meets to celebrate and learn about Spanish culture. Speaking Spanish is not a requirement 
+                                    for joining the club, but members must be currently enrolled in or have taken a Spanish class in the past.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-event" id="Student Council">
+                <div class="event">
+                    <div class="flow">
+                        <div>
+                            <div class="event-name">
+                                <h1>Student Council</h1>
+                            </div>
+                            <div class="event-description">
+                                <p>
+                                    Homestead's Student Council is comprised of an elected board as well 
+                                    as general members. Members volunteer at the school's social and fundraising events and assist in 
+                                    planning these activities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flow">
+                        <div class="club-link-flow">
+                            <div class="club-link">
+                                <a href="#"><b>Learn more</b></a>
+                            </div>
+                        </div>
+                        <!-- <div class="event-name">
+                            <h1>Blood Drive</h1>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="half-space"></div>
+            <div class="half-space"></div>
+
+            <footer>
+                <div class="flex-footer">
+                    <div class="footer-text">
+                        <p><a class="footer-link" href="https://icons8.com/icon/nycbzd1Rzvqz/school" target="_blank" rel="noopener noreferrer">School</a> icon by <a class="footer-link" href="https://icons8.com/" target="_blank" rel="noopener noreferrer">Icons8</a>.</p>
+                    </div>
+                </div>
+            </footer>
+            
+
+<!-- 
+            <div class="description">
+                <p>We participate in a wide array of events, including Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione facilis distinctio reprehenderit aperiam cumque ipsum neque consectetur quidem quas! Quas doloremque nulla dicta fugit accusantium ipsum. Unde magnam sapiente omnis.
+                </p>
+            </div> -->
+
+        <!-- <div class="flex">
+            <div class="heading">
+                <h1>Calendar</h1>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&src=amFzbWluZXh1OTk5QGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19jbGFzc3Jvb20xNzFhZDhjOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTEyNTMwNTQzNjk1Nzk0Mzg5NjU1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%23c26401&color=%230B8043&color=%230047a8" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div> -->
+
+        <script>
+            var x = document.getElementById("top-nav");
+            console.log(x);
+            console.log(x.className);
+            document.addEventListener('click', event => {
+                if(event.target.closest('#top-nav') === null){
+                    x.className = "nav-bar";
+                };
+            })
+        </script>
+
+    </body>
+</html>
